@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Management Company Services getCompanySequenceMap returns a map of company sequence and company details 1`] = `
+Map {
+  1 => [
+    {
+      "companyName": "aCompany",
+      "id": "1",
+      "sequence": 1,
+    },
+  ],
+  3 => [
+    {
+      "companyName": "zCompany",
+      "id": "3",
+      "sequence": 3,
+    },
+    {
+      "companyName": "xCompany",
+      "id": "3",
+      "sequence": 3,
+    },
+  ],
+  2 => [
+    {
+      "companyName": "bCompany",
+      "id": "2",
+      "sequence": 2,
+    },
+  ],
+}
+`;
+
+exports[`Management Company Services processContactPayments returns a map of CompanyPayments sorted by payment status 1`] = `
+[
+  {
+    "amount": 10,
+    "companyId": "2",
+    "companyName": "bCompany",
+    "contactId": "02-0001",
+    "date": 1691631397672,
+    "status": "PAID",
+  },
+  {
+    "amount": 10,
+    "companyId": "2",
+    "companyName": "bCompany",
+    "contactId": "02-0001",
+    "date": 1691631397672,
+    "status": "PAID",
+  },
+  {
+    "amount": 20,
+    "companyId": "2",
+    "companyName": "bCompany",
+    "contactId": "02-0003",
+    "date": 1691631397674,
+    "status": "PAID",
+  },
+]
+`;
